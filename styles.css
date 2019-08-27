@@ -10,6 +10,13 @@ button{
     margin: 0 4px 0 4px;
 }
 
+figcaption{
+    font-family: Arial, Helvetica, sans-serif;
+    opacity: 0.5;
+    font-size: 0.8rem;
+    text-align: left
+}
+
 .raleway{
     font-family: 'Raleway', sans-serif !important;
 }
