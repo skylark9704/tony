@@ -14,7 +14,7 @@ figcaption{
     font-family: Arial, Helvetica, sans-serif;
     opacity: 0.5;
     font-size: 0.8rem;
-    text-align: left
+    text-align: left;
 }
 
 .raleway{
@@ -91,26 +91,55 @@ figcaption{
 }
 
 @media only screen and (max-width: 900px) {
-    .content{
+    .content, .content-more{
         padding: 0 16px 0 16px;
     }
 
     .content-image > img{
         width: 100%;
     }
+
+    .items > div{
+        flex-grow: 1;
+        width: 50%;
+        margin: 15px;
+    }
+
+    .content-more{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 }
 
 @media only screen and (min-width: 901px) {
     .content{
-        padding: 0 35% 0 35%;
+        padding: 0 30% 0 30%;
     }
 
-    figcaption{
+    .content-image figcaption{
         padding:  0 20% 0 20%;
     }
 
     .content-image > img{
         width: 60%;
+    }
+
+    .content-more{
+        padding: 0 15% 0 15%;
+    }
+
+    .items > div{
+        flex-grow: 1;
+        width: 25%;
+        margin: 15px;
+        margin-left: 0;
+    }
+
+    .content-more{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
     }
 }
 
@@ -149,6 +178,42 @@ figcaption{
     flex-direction: row;
     justify-content: center;
     align-items: center;
+}
+
+.items{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-flow: wrap;
+}
+
+.items  figcaption{
+    text-align: right;
+}
+
+.more label{
+    opacity: 0.5;
+    font-size: 0.7rem;
+}
+
+.popular{
+    flex-shrink: 0
+}
+.popular-list{
+    list-style-type: none;
+    padding: 0;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 1.2rem;
+}
+
+.popular-list > li {
+    padding-bottom: 16px
+}
+
+.content-more > div{
+    flex-grow: 1;
+    text-align: left;
+    margin:16px;
 }
 
 
