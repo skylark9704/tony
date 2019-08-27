@@ -58,23 +58,33 @@ button{
 }
 
 @media only screen and (max-width: 900px) {
-    .content-holder {
-      padding: 0 16px 0 16px;
-      text-align: center
+    .content > p {
+        padding: 0 16px 0 16px;
+        text-align: justify;
+        font-size: 1.3rem;
+        line-height: 1.3
     }
-  }
 
-  @media only screen and (min-width: 901px) {
-    .content-holder {
-      padding: 0 20% 0 20%;
-      text-align: center;
+    .content > img{
+        width: 100%;
     }
-  }
+}
 
-.content > p {
-    text-align: justify;
-    font-size: 1.3rem;
-    line-height: 1.3
+.content-holder{
+    text-align: center;
+}
+
+@media only screen and (min-width: 901px) {
+    .content > p {
+        padding: 0 20% 0 20%;
+        text-align: justify;
+        font-size: 1.3rem;
+        line-height: 1.3
+    }
+
+    .content > img{
+        width: 60%;
+    }
 }
 
 .content > h1,h2,h3,h4,h5,h6{
