@@ -3,12 +3,25 @@
 body{
     padding: 0;
     margin:0;
-    font-family: 'Raleway', sans-serif;
+    font-family: "Times New Roman", Times, serif;
 }
 
 button{
     margin: 0 4px 0 4px;
 }
+
+.raleway{
+    font-family: 'Raleway', sans-serif !important;
+}
+
+.helvetica{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.strong{
+    font-weight: bolder !important;
+}
+
 .top-nav{
     width:100%;
     display: flex;
@@ -35,6 +48,10 @@ button{
     padding:8px 
 }
 
+.top-nav-items-left > * {
+    margin: 0 8px 0 8px;
+}
+
 .top-nav-items-center{
     flex-grow: 1;
     padding:8px
@@ -43,6 +60,11 @@ button{
 .top-nav-items-right{
     flex-grow: 1;
     padding:8px
+}
+
+.logo{
+    width:150px;
+    height: 30px;
 }
 
 .text-left{
@@ -85,21 +107,55 @@ button{
     box-shadow: 0 0 16px 2px silver
 }
 
+.content > label {
+    opacity: 0.5;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.7rem;
+}
+
 .content > h1,h2,h3,h4,h5,h6{
     text-align: left;
 }
 
+.content > h1{
+    font-size: 2rem
+}
+
+.content-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.comments{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row
+}
+
+.social{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.social > img{
+    margin : 0 16px 0 16px !important; 
+}
+
 .button-dark{
-    background-color: #212121;
+    background-color: #6288a5;
     color:white;
     border: 1px solid transparent;
     padding : 8px;
     border-radius: 5px;
     transition: all 0.2s ease-in-out;
+    font-weight: 600;
+    font-size: 0.7rem;
 }
 
 .button-dark:hover{
-    transform: scale(1.1);
+    background-color: #326891;
 }
 
 .button-light{
