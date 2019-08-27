@@ -87,11 +87,23 @@ button{
     .content{
         padding: 0 16px 0 16px;
     }
+
+    .content-image > img{
+        width: 100%;
+    }
 }
 
 @media only screen and (min-width: 901px) {
     .content{
-        padding: 0 20% 0 20%;
+        padding: 0 35% 0 35%;
+    }
+
+    figcaption{
+        padding:  0 20% 0 20%;
+    }
+
+    .content-image > img{
+        width: 60%;
     }
 }
 
@@ -121,12 +133,17 @@ button{
     font-size: 2rem
 }
 
+.content-image{
+    text-align: center !important;
+}
+
 .content-footer{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
+
 
 .comments{
     flex-grow: 1;
